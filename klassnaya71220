@@ -1,0 +1,23 @@
+def WTFuck(a, b, c):
+    if a > b:
+        if a > c: 
+            if b > c:
+                W = str(c) + " " + str(b) + " " + str(a)
+            else:
+                W = str(b) + " " + str(c) + " " + str(a)
+        else:
+            W = str(b) + " " + str(a) + " " + str(c)
+    else:
+        if b > c:
+            if a > c:
+                W = str(c) + " " + str(a) + " " + str(b)
+            else:
+                W = str(a) + " " + str(c) + " " + str(b)
+        else:
+            W = str(a) + " " + str(b) + " " + str(c)
+    return W
+
+a = int(input())
+b = int(input())
+c = int(input())
+print(WTFuck(a, b, c))
